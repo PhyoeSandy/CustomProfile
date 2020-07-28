@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Progress"
+                android:padding="10dp"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Design"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tvPageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Page"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:layout_below="@id/tvTitle"/>
+
+            <com.padcmyanmar.padcx.customprofile.views.components.CircleImageView
+                android:id="@+id/btnProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pro1"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="2dp"
+                android:layout_below="@id/tvPageName"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tvComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:padding="10dp"
+                android:layout_toEndOf="@id/ivComment"
+                android:layout_below="@id/tvPageName"/>
+
+            <ImageView
+                android:id="@+id/ivComment"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_comment_white_24dp"
+                android:layout_below="@id/tvPageName"/>
+
+            <TextView
+                android:id="@+id/tvAttach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:padding="10dp"
+                android:layout_below="@id/tvPageName"
+                android:layout_toRightOf="@id/ivAttach"/>
+
+            <ImageView
+                android:id="@+id/ivAttach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_attach_file_white_24dp"
+                android:layout_below="@id/tvPageName"
+                android:layout_toRightOf="@id/tvComment"/>
+
+            <TextView
+                android:id="@+id/tvMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N2 163"
+                android:padding="10dp"
+                android:layout_below="@id/tvPageName"
+                android:layout_toLeftOf="@id/btnProfile"/>
+
+
+        </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
