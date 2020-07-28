@@ -37,7 +37,7 @@ class TaskAcitivity : BaseAcitivity(), CreateTaskView {
         setupPresenter()
         setupRecycleView()
 
-        mPresenter.initPresenter(this)
+        mPresenter.onUiReady(this)
     }
 
     private fun setupPresenter() {
@@ -51,7 +51,7 @@ class TaskAcitivity : BaseAcitivity(), CreateTaskView {
 
         rvProfile.apply {
             addItemDecoration(ItemDecoration())
-            layoutManager = LinearLayoutManager(MainActivity(),LinearLayoutManager.HORIZONTAL,false)
+            layoutManager = LinearLayoutManager(TaskAcitivity(),LinearLayoutManager.HORIZONTAL,false)
             adapter = mAdapter
         }
     }
